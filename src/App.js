@@ -40,7 +40,6 @@ function App() {
       .then(res => res.json())
       .then(data => setExchangeRate(data.rates[toCurrency]))
     }
-
   }, [fromCurrency, toCurrency])
 
   const handleFromAmountChange = (e) => {
